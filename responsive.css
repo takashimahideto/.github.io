@@ -3,10 +3,30 @@
         display: none;
     }
     .responsive-menu{
-        opacity: 0.8;
+        opacity: 0.8 !important;
         z-index: 100;
     }
-    #sp-open{
-        opacity: 10;
+    .line-box{
+        display: block !important;
     }
+    #sp-input:checked ~ #responsive-nav{
+        display: none;
+    }
+}
+.line-box{
+    display: none;
+    background-color: white;
+    cursor: pointer;
+    padding: 5px;
+    position: fixed;
+    top: 20px;
+    right: 15%;
+    z-index: 100;
+}
+.line{
+    width: 30px;
+    height: 3px;
+    background-color: black;
+    margin: 5px;
+    cursor: pointer;
 }
